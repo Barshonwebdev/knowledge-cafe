@@ -1,0 +1,48 @@
+[
+    {    "id":1,
+         "blog-name" : "How to begin programming",
+         "blog-cover":"https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-97395.jpg?w=826&t=st=1694361040~exp=1694361640~hmac=d7d27bcfaed5a6de3bf672019147b8a59560cb397646aa6a139591e03717b796 ",
+         "author-name": "Linda Jane",
+         "author-cover": "https://img.freepik.com/free-photo/portrait-smiling-blonde-woman_23-2148316635.jpg?w=740&t=st=1694361279~exp=1694361879~hmac=8389e06647112d184614f22d4ad6eb4e9839b85a7151ffab3f5db06ce79ecec0 ",
+         "publish-date": "27th April (25 days ago)",
+         "reading-time": 10,
+         "hashtags": "#programming  #beginner"
+    },
+    {    "id":2,
+         "blog-name" : "Framework Basics",
+         "blog-cover":" https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1694361109~exp=1694361709~hmac=38889c174e9442f6c9789580bd4ee03ad7f6f35b571659e345dcdb8de4dedab8 ",
+         "author-name": "Suvendu Paul",
+         "author-cover": "https://img.freepik.com/free-photo/smiling-caucasian-young-guy-wearing-pink-shirt-isolated-white-background_141793-38613.jpg?w=740&t=st=1694361260~exp=1694361860~hmac=2f90a6e1ae8515021bb2f7a87084cb9f525803aeb6b0735b49889f0480bb25bc ",
+         "publish-date": "7th October (12 days ago)",
+         "reading-time": 15,
+         "hashtags": "#framework  #basics"
+    },
+    {    "id":3,
+         "blog-name" : "Time management of coding",
+         "blog-cover":"https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=826&t=st=1694361152~exp=1694361752~hmac=84b61d38174cfa1694303ded0d76873d19f1cc1576762b0350880e9844bab698 ",
+         "author-name": "Jhankar Mahmud",
+         "author-cover": "https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg?t=st=1694361269~exp=1694361869~hmac=2e987044df98dfe4747a3f7fb7a117c25cd997a7fd38ef8a47187220969004e6 ",
+         "publish-date": "1st February (1 day ago)",
+         "reading-time": 5,
+         "hashtags": "#time-management  #planning"
+    },
+    {    "id":4,
+         "blog-name" : "React Intermediate Concepts",
+         "blog-cover":"https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg?w=826&t=st=1694361172~exp=1694361772~hmac=d0ea9cc0ebb910be593ac1305b030b4b9b8c0d399fb4e121a9cd3050a359cb2a ",
+         "author-name": "Alice Roger",
+         "author-cover": "https://img.freepik.com/free-photo/indoor-shot-attractive-young-woman-with-glasses-posing-against-white-wall_273609-20347.jpg?w=826&t=st=1694361334~exp=1694361934~hmac=1351b67b6be88b0d7c16b64ebc6839af6be701b6fc03610fd41bb2216e02ddac ",
+         "publish-date": "13th November (2 months ago)",
+         "reading-time": 20,
+         "hashtags": "#programming  #react"
+    },
+    {    "id":5,
+         "blog-name" : "Fundamentals of server side rendering",
+         "blog-cover":"https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=826&t=st=1694361190~exp=1694361790~hmac=82b04ab0b5f6a845b4f2a9c0e6068788b9baae20589684fd504d8011615abf4e ",
+         "author-name": "Abraham Jonas",
+         "author-cover": "https://img.freepik.com/free-photo/handsome-young-guy-with-glasses-posing_176420-30004.jpg?t=st=1694361349~exp=1694361949~hmac=8eacb5dad3c75ddbf9919c0c697b7617347a4bb93fcc02b53535379caa6342a6 ",
+         "publish-date": "11th December (5 months ago)",
+         "reading-time": 25,
+         "hashtags": "#programming  #server"
+    }
+    
+]
