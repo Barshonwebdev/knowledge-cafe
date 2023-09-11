@@ -41,3 +41,7 @@
 .whole{
   margin: 0 10%;
 }
+
+.main-section{
+  display: flex;
+}
