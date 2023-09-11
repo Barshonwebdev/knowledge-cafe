@@ -4,11 +4,7 @@ import './Blogs.css'
 import React, { useEffect, useState } from 'react';
 
 const Blogs = () => {
-    const [counter, setCounter] = useState(0);
-    const handleCount = () => {
-      const result = counter;
-      return result;
-    };
+    
     const [blogs,setBlogs]=useState([]);
     useEffect(()=>{
         fetch('data.json')
@@ -16,11 +12,16 @@ const Blogs = () => {
         .then(data=>setBlogs(data))
     },[])
     console.log(blogs)
+    const [counter, setCounter] = useState(0);
+    const handleCount = () => {
+      const result = counter;
+      return result;
+    };
     return (
       <div className='container'>
         <div className="blogs-container">
           {blogs.map((blog) => (
-            <Blog key={blog.id} blog={blog}></Blog>
+            <Blog handleCount={handleCount} key={blog.id} blog={blog}></Blog>
           ))}
         </div>
         <div>

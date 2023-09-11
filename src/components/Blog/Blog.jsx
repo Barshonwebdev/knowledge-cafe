@@ -33,7 +33,7 @@ const Blog = (props) => {
       </div>
       <h3>{blogTitle}</h3>
       <p className="gray-text">{hashtags}</p>
-      <a><button className="read-button">Mark as read</button></a>
+      <a><button onClick={()=>props.handleCount()} className="read-button">Mark as read</button></a>
       <p className="gray-text">
         <hr />
       </p>
