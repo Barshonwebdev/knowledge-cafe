@@ -20,6 +20,10 @@ a:hover {
 h1 {
 }
 
+h4,h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
