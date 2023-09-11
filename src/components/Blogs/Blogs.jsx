@@ -1,4 +1,5 @@
 import Blog from '../Blog/Blog';
+import Read from '../Read/Read';
 import './Blogs.css'
 import React, { useEffect, useState } from 'react';
 
@@ -30,7 +31,7 @@ const Blogs = () => {
         </div>
         <div>
           <div className="read-container">
-            <h4>Spent on reading: {counter} mins </h4>
+            <Read counter={counter}></Read>
           </div>
         </div>
       </div>
