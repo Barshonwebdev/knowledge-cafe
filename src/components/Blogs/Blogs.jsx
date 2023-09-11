@@ -1,4 +1,5 @@
 import Blog from '../Blog/Blog';
+import Bookmarks from '../Bookmarks/Bookmarks';
 import Read from '../Read/Read';
 import './Blogs.css'
 import React, { useEffect, useState } from 'react';
@@ -13,6 +14,10 @@ const Blogs = () => {
     },[])
     console.log(blogs)
     const [counter, setCounter] = useState(0);
+    const [bookmarkcounter,setBookmarkcounter]=useState(0);
+    const handleBookmarkCount=()=>{
+      return bookmarkcounter;
+    }
     const handleBlogRead=(time)=>{
       console.log(time);
       const newRead=time+counter;
@@ -32,6 +37,9 @@ const Blogs = () => {
         <div>
           <div className="read-container">
             <Read counter={counter}></Read>
+          </div>
+          <div>
+            <Bookmarks bookmarkcounter={handleBookmarkCount()}></Bookmarks>
           </div>
         </div>
       </div>
