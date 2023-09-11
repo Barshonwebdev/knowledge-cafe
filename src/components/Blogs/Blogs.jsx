@@ -16,7 +16,8 @@ const Blogs = () => {
     const [counter, setCounter] = useState(0);
     const [bookmarkcounter,setBookmarkcounter]=useState(0);
     const handleBookmarkCount=()=>{
-      return bookmarkcounter;
+      const newCount=bookmarkcounter+1;
+      setBookmarkcounter(newCount)
     }
     const handleBlogRead=(time)=>{
       console.log(time);
@@ -31,6 +32,7 @@ const Blogs = () => {
               handleBlogRead={handleBlogRead}
               key={blog.id}
               blog={blog}
+              handleBookmarkCount={handleBookmarkCount}
             ></Blog>
           ))}
         </div>
@@ -39,7 +41,7 @@ const Blogs = () => {
             <Read counter={counter}></Read>
           </div>
           <div>
-            <Bookmarks bookmarkcounter={handleBookmarkCount()}></Bookmarks>
+            <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
           </div>
         </div>
       </div>
