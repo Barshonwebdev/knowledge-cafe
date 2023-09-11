@@ -5,6 +5,7 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 const Blog = (props) => {
   const { blogTitle, blogCover, authorCover, authorName, published_in,reading_time,hashtags } =
     props.blog;
+    
   return (
     <div className="each-blog">
       <img src={blogCover} alt="" />
