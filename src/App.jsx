@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
 import Header from './components/Header/Header'
-import ReadCounter from './components/ReadCounter/ReadCounter'
+
 
 function App() {
   return (
