@@ -3,7 +3,7 @@ import './Bookmarks.css'
 const Bookmarks = (props) => {
     return (
         <div className='bookmarks-container'>
-            <h4>Bookmarked blogs: {props.bookmarkcounter}</h4>
+            <h4>Bookmarked Blogs: {props.bookmarkcounter}</h4>
         </div>
     );
 };
