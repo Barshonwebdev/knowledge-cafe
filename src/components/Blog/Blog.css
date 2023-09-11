@@ -47,3 +47,14 @@
 .blog-read div small{
     margin-right: 20px;
 }
+
+.read-button{
+    background-color: rgb(49, 0, 128);
+    color: white;
+    border: none;
+    border-radius: 5%;
+    padding: 1%;
+}
+.read-button:hover{
+    background-color: brown;
+}
