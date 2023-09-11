@@ -1,0 +1,16 @@
+.each-blog img{
+    height: 100%;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.each-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon{
+    color: brown;
+}
