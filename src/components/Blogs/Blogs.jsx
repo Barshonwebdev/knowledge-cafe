@@ -13,19 +13,16 @@ const Blogs = () => {
     },[])
     console.log(blogs)
     const [counter, setCounter] = useState(0);
-    const handleCount = () => {
-      const result = counter;
-      return result;
-    };
+  
     return (
-      <div className='container'>
+      <div className="container">
         <div className="blogs-container">
           {blogs.map((blog) => (
-            <Blog handleCount={handleCount} key={blog.id} blog={blog}></Blog>
+            <Blog key={blog.id} blog={blog}></Blog>
           ))}
         </div>
         <div>
-          <ReadCounter handleCount={handleCount}></ReadCounter>
+          <h4>Time spent on reading: </h4>
         </div>
       </div>
     );
