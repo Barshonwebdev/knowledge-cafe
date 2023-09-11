@@ -1,3 +1,14 @@
 .container{
     display: flex;
 }
+
+.read-container{
+    border: 2px solid rgb(212, 201, 224);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    color: rgb(95, 39, 148);
+    background-color: rgb(229, 215, 245);
+}

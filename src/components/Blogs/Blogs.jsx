@@ -1,5 +1,4 @@
 import Blog from '../Blog/Blog';
-import ReadCounter from '../ReadCounter/ReadCounter';
 import './Blogs.css'
 import React, { useEffect, useState } from 'react';
 
@@ -13,16 +12,26 @@ const Blogs = () => {
     },[])
     console.log(blogs)
     const [counter, setCounter] = useState(0);
-  
+    const handleBlogRead=(time)=>{
+      console.log(time);
+      const newRead=time+counter;
+      setCounter(newRead);
+    }
     return (
       <div className="container">
         <div className="blogs-container">
           {blogs.map((blog) => (
-            <Blog key={blog.id} blog={blog}></Blog>
+            <Blog
+              handleBlogRead={handleBlogRead}
+              key={blog.id}
+              blog={blog}
+            ></Blog>
           ))}
         </div>
         <div>
-          <h4>Time spent on reading: </h4>
+          <div className="read-container">
+            <h4>Spent on reading: {counter} mins </h4>
+          </div>
         </div>
       </div>
     );
