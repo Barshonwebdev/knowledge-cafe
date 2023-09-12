@@ -21,8 +21,8 @@ const Blogs = () => {
       const newCount=bookmarkcounter+1;
       setBookmarkcounter(newCount);
       console.log(blogsTitle);
-      bookmarked.push(blogsTitle);
-      setBookmarked(bookmarked);
+      const newBook=[...bookmarked,blogsTitle]
+      setBookmarked(newBook);
       console.log(bookmarked);
     }
     const handleBlogRead=(time)=>{
@@ -49,7 +49,14 @@ const Blogs = () => {
           <div>
             <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
             <div>
-              <BookmarkBlog bookmarked={bookmarked}></BookmarkBlog>
+              <h2>bookmarks: </h2>
+              <div>
+                {bookmarked.filter((b) => (
+                  <BookmarkBlog bookmarked={bookmarked}>
+                    <div></div>
+                  </BookmarkBlog>
+                ))}
+              </div>
             </div>
           </div>
         </div>
