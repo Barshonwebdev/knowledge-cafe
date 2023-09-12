@@ -8,6 +8,7 @@ const Blog = (props) => {
     const readtime=props.blog.reading_time;
     const handleBlogRead=props.handleBlogRead;
     const handleBookmark=props.handleBookmark;
+    
   return (
     <div className="each-blog">
       <img src={blogCover} alt="" />
@@ -26,7 +27,7 @@ const Blog = (props) => {
             <small className="gray-text">{reading_time} min read</small>
           </div>
           <div>
-            <button onClick={() => handleBookmark()}>
+            <button onClick={() => handleBookmark(blogTitle)}>
               <FontAwesomeIcon className="icon" icon={faBookmark}>
               </FontAwesomeIcon>
             </button>

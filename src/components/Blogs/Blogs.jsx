@@ -1,5 +1,6 @@
 import Blog from '../Blog/Blog';
-import Bookmarks from '../Bookmarks/Bookmarks';
+import BookmarkBlog from '../BookmarkBlog/BookmarkBlog';
+import Bookmarks from '../BookmarksCount/BookmarksCount';
 import Read from '../Read/Read';
 import './Blogs.css'
 import React, { useEffect, useState } from 'react';
@@ -15,9 +16,14 @@ const Blogs = () => {
     console.log(blogs)
     const [counter, setCounter] = useState(0);
     const [bookmarkcounter,setBookmarkcounter]=useState(0);
-    const handleBookmark=()=>{
+    const [bookmarked,setBookmarked]=useState([]);
+    const handleBookmark=(blogsTitle)=>{
       const newCount=bookmarkcounter+1;
       setBookmarkcounter(newCount);
+      console.log(blogsTitle);
+      bookmarked.push(blogsTitle);
+      setBookmarked(bookmarked);
+      console.log(bookmarked);
     }
     const handleBlogRead=(time)=>{
       console.log(time);
@@ -42,6 +48,9 @@ const Blogs = () => {
           </div>
           <div>
             <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
+            <div>
+              <BookmarkBlog bookmarked={bookmarked}></BookmarkBlog>
+            </div>
           </div>
         </div>
       </div>

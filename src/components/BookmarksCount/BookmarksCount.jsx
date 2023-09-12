@@ -1,5 +1,5 @@
 import React from 'react';
-import './Bookmarks.css'
+import './BookmarksCount.css'
 const Bookmarks = (props) => {
     return (
         <div className='bookmarks-container'>
