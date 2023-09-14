@@ -12,6 +12,7 @@
     border-radius: 10px;
     color: rgb(95, 39, 148);
     background-color: rgb(229, 215, 245);
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -28,3 +29,11 @@
     }
 }
 
+.allread{
+    position: relative;
+}
+
+.stick{
+    position: sticky;
+    top: 35px;
+}

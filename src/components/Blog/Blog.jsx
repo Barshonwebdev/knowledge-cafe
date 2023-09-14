@@ -36,9 +36,10 @@ const Blog = (props) => {
       <h3 className="title">{blogTitle}</h3>
       <p className="gray-text">{hashtags}</p>
       <a>
-        <button
+        <button 
           onClick={() => handleBlogRead(readtime)}
           className="read-button"
+          
         >
           Mark as read
         </button>

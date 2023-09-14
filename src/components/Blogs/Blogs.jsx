@@ -42,18 +42,20 @@ const Blogs = () => {
             ></Blog>
           ))}
         </div>
-        <div>
-          <div className="read-container">
-            <Read counter={counter}></Read>
-          </div>
-          <div className="bookmarks">
-            <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
-            <div>
-              <h2>bookmarks: </h2>
+        <div className="allread">
+          <div className='stick'>
+            <div className="read-container">
+              <Read counter={counter}></Read>
+            </div>
+            <div className="bookmarks">
+              <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
               <div>
-                <BookmarkBlog bookmarked={bookmarked}>
-                  <div></div>
-                </BookmarkBlog>
+                <h2>bookmarks: </h2>
+                <div>
+                  <BookmarkBlog bookmarked={bookmarked}>
+                    <div></div>
+                  </BookmarkBlog>
+                </div>
               </div>
             </div>
           </div>
