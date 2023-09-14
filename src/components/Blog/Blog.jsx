@@ -23,7 +23,7 @@ const Blog = (props) => {
         </div>
         <div className="blog-read">
           <div>
-            <small className="gray-text">{reading_time} min read</small>
+            <small className="gray-text">{reading_time}min</small>
           </div>
           <div>
             <button onClick={() => handleBookmark(blogTitle)}>
@@ -33,7 +33,7 @@ const Blog = (props) => {
           </div>
         </div>
       </div>
-      <h3>{blogTitle}</h3>
+      <h3 className="title">{blogTitle}</h3>
       <p className="gray-text">{hashtags}</p>
       <a>
         <button

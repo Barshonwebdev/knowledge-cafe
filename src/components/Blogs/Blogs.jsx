@@ -46,16 +46,14 @@ const Blogs = () => {
           <div className="read-container">
             <Read counter={counter}></Read>
           </div>
-          <div>
+          <div className="bookmarks">
             <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
             <div>
               <h2>bookmarks: </h2>
               <div>
-                
-                  <BookmarkBlog bookmarked={bookmarked}>
-                    <div></div>
-                  </BookmarkBlog>
-                
+                <BookmarkBlog bookmarked={bookmarked}>
+                  <div></div>
+                </BookmarkBlog>
               </div>
             </div>
           </div>
