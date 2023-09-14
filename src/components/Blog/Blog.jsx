@@ -8,7 +8,6 @@ const Blog = (props) => {
     const readtime=props.blog.reading_time;
     const handleBlogRead=props.handleBlogRead;
     const handleBookmark=props.handleBookmark;
-    
   return (
     <div className="each-blog">
       <img src={blogCover} alt="" />

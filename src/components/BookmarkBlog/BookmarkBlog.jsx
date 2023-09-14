@@ -1,15 +1,16 @@
 import React from 'react';
 
 const BookmarkBlog = (props) => {
-    const title=props.bookmarked.pop();
-    console.log(title);
     console.log(props.bookmarked);
+    const blogs=props.bookmarked;
     return (
       <div>
         {
           <div>
             <h4>
-              {title} <br />
+              {
+                blogs.map(b=>(<h4>{b}</h4>))
+              }
             </h4>
           </div>
         }
