@@ -49,8 +49,7 @@ const Blogs = () => {
             </div>
             <div className="bookmarks">
               <Bookmarks bookmarkcounter={bookmarkcounter}></Bookmarks>
-              <div>
-                <h2>bookmarks: </h2>
+              <div className='bookmark-section'>
                 <div>
                   <BookmarkBlog bookmarked={bookmarked}>
                     <div></div>

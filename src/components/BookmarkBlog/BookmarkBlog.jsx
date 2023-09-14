@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './BookmarkBlog.css'
 const BookmarkBlog = (props) => {
     console.log(props.bookmarked);
     const blogs=props.bookmarked;
@@ -8,9 +8,9 @@ const BookmarkBlog = (props) => {
         {
           <div>
             <h4>
-              {
-                blogs.map(b=>(<h4>{b}</h4>))
-              }
+              {blogs.map((b) => (
+                <p className="each-bookmark">{b}</p>
+              ))}
             </h4>
           </div>
         }
