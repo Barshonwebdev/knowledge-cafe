@@ -12,7 +12,7 @@
     border-radius: 10px;
     color: rgb(95, 39, 148);
     background-color: rgb(229, 215, 245);
-    
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 480px) {
@@ -40,13 +40,13 @@
 
 .bookmark-section{
     padding: 3px;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 5px;
 }
 
 .bookmarks{
     background-color: rgb(240, 234, 234);
-    margin-top: 25px;
+    margin-top: 15px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
